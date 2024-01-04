@@ -1,6 +1,13 @@
+// relative styles
+import '@mantine/core/styles.css';
+import './globals.css'
+
+// relative imports
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import './globals.css'
+import { MantineProvider } from '@mantine/core'
+import { AppFooter } from '@/components/app-footer';
+import { AppHeader } from '@/components/app-header';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +23,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <MantineProvider>
+          <AppHeader />
+          {children}
+          <AppFooter />
+        </MantineProvider>
+      </body>
     </html>
   )
 }
