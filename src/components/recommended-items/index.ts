@@ -1,0 +1,1 @@
+import { RecommendedItems } from './recommended-items'

@@ -1,0 +1,1 @@
+export { RecommendedItemsCard } from './recommend-items-card'

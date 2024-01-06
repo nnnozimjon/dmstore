@@ -1,0 +1,1 @@
+export { DealsAndOffers } from './deals-and-offers'

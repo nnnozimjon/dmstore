@@ -14,7 +14,6 @@ export const AppFooter = () => {
   }
   return (
     <Fragment>
-
       <Flex direction='column'>
         <Grid grow gutter={'lg'} className='bg-gray-900 w-full lg:px-[200px] px-10 py-16'>
           <Grid.Col {..._gridSettings} className='flex flex-col gap-2'>
@@ -24,7 +23,6 @@ export const AppFooter = () => {
             <Text color='gray'>Mushfiqi 21, Dushanbe 734019</Text>
             <Text color='#fff'>info@dushanbemarket.com</Text>
           </Grid.Col>
-
           <Grid.Col {..._gridSettings} className='flex flex-col'>
             <Text color='#fff' className='mb-2'>TOP CATEGORY</Text>
             <Text color='gray'>Computer & Laptop</Text>
