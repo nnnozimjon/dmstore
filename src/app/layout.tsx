@@ -1,7 +1,7 @@
 // relative styles
+import '@mantine/carousel/styles.css';
 import '@mantine/core/styles.css';
 import './globals.css'
-
 // relative imports
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'

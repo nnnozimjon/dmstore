@@ -15,9 +15,12 @@
     "*.{tsx,ts}": "npm run lint:fix"
   },
   "dependencies": {
+    "@mantine/carousel": "^7.4.0",
     "@mantine/core": "^7.4.0",
     "@mantine/hooks": "^7.4.0",
     "@tabler/icons-react": "^2.45.0",
+    "embla-carousel-autoplay": "^7.1.0",
+    "embla-carousel-react": "^7.1.0",
     "next": "14.0.4",
     "postcss-preset-mantine": "^1.12.3",
     "postcss-simple-vars": "^7.0.1",

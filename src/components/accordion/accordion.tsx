@@ -7,8 +7,10 @@ interface IAccordion {
 }
 
 export const Accordion = ({ children, label }: IAccordion) => {
-  return <Box>
-    <Text className="text-2xl font-semibold mb-4">{label}</Text>
-    {children}
+  return <Box className="mb-4">
+    <Text className="text-[20px] font-semibold mb-4">{label}</Text>
+    <Box>
+      {children}
+    </Box>
   </Box>
 }

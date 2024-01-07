@@ -12,8 +12,8 @@ interface IRecommendedItemsCardProps {
 
 export const RecommendedItemsCard = ({ description, price, src, discount, rating = 0 }: IRecommendedItemsCardProps) => {
   return (
-    <Flex direction='column' className="p-2 border border-gray-300 rounded-md flex-shrink-0 w-[220px] lg:flex-shrink">
-      <Image src={src} alt="" className="w-full" />
+    <Flex direction='column' className="p-2 border border-gray-300 flex-shrink-0 w-[220px] lg:flex-shrink">
+      <Image src={src} alt="" className="w-[200px] h-[200px] object-cover bg-cover" />
       <Flex align='center' justify='space-between'>
         <Text className="text-[18px] font-medium">{price}</Text>
         {discount && <Text className="text-[14px] font-medium line-through text-gray-500">{discount}</Text>}
