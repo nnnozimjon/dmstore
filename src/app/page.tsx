@@ -2,9 +2,10 @@
 
 import { BatchItems } from "@/components/batch-items";
 import { CarouselItems } from "@/components/carousel";
+import { Categories } from "@/components/categories";
 import { DealsAndOffers } from "@/components/deals-and-offers";
 import { RecommendedItems } from "@/components/recommended-items/recommended-items";
-import { Box, Flex, } from "@mantine/core";
+import { Flex } from "@mantine/core";
 import { Fragment } from "react";
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
   return (
     <Fragment>
       <Flex direction="column" className="lg:px-[250px] md:px-[40px] sm:px-0">
-
+        <Categories />
         <CarouselItems />
         <br />
         <Flex direction='column' gap="lg" className="px-3">
