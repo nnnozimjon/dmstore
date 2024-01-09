@@ -9,7 +9,6 @@ import { Flex } from "@mantine/core";
 import { Fragment } from "react";
 
 export default function Home() {
-
   return (
     <Fragment>
       <Flex direction="column" className="lg:px-[250px] md:px-[40px] sm:px-0">
