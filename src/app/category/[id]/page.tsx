@@ -1,11 +1,10 @@
 "use client";
 
 import { Fragment, useState } from "react";
-import { ActionIcon, Flex, Grid, Text, rem } from "@mantine/core";
-import { Categories } from "@/components/categories";
+import { ActionIcon, Button, Flex, Grid, Text } from "@mantine/core";
 import { LeftSideFilter } from "@/components/left-side-filter/left-side-filter";
-import { IconLayoutGrid, IconLayoutList } from "@tabler/icons-react";
-import { RecommendedItemsCard } from "@/components/recommend-items-card";
+import { IconLayoutGrid, IconLayoutList, IconX } from "@tabler/icons-react";
+import { Categories } from "@/components/categories";
 import { GridCard } from "@/components/grid-card";
 
 export default function ProductsPage() {
@@ -13,7 +12,7 @@ export default function ProductsPage() {
 
   return (
     <Fragment>
-      <Flex direction="column" className="lg:px-[250px] md:px-[40px] sm:px-0">
+      <Flex direction="column" className="lg:px-[250px] md:px-[40px] sm:px-0 overflow-x-hidden">
         <Categories />
         <Grid className="mb-4">
           <Grid.Col span={{ lg: 3, sm: 12 }} className="">
@@ -31,8 +30,11 @@ export default function ProductsPage() {
                 </ActionIcon>
               </Flex>
             </Flex>
+            <Flex gap={'md'} className="p-2">
+              <Button className="border-blue-400 text-gray-600 font-medium" rightSection={<IconX className="text-gray-500" size={20} />}>Sumsung</Button>
+            </Flex>
             <br />
-            <Flex gap='lg' className="flex-wrap justify-between">
+            <Flex gap='lg' className="flex-wrap justify-between md:px-0 px-2 overflow-x-hidden">
               <GridCard view={view} />
               <GridCard view={view} />
               <GridCard view={view} />
