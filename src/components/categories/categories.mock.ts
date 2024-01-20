@@ -2,6 +2,7 @@ export const categories = [
   {
     id: 1,
     name: 'Электроника',
+    link: '/electronics',
     sub: [
       {
         id: 2,
@@ -33,6 +34,7 @@ export const categories = [
   {
     id: 7,
     name: 'Мода',
+    link: '/moda',
     sub: [
       {
         id: 8,
@@ -64,6 +66,7 @@ export const categories = [
   {
     id: 13,
     name: 'Дом и быт',
+    link: '/dom-i-bit',
     sub: [
       {
         id: 14,
@@ -95,6 +98,7 @@ export const categories = [
   {
     id: 19,
     name: 'Красота и уход',
+    link: '/krasota-i-uxod',
     sub: [
       {
         id: 20,
@@ -126,6 +130,7 @@ export const categories = [
   {
     id: 25,
     name: 'Спорт и активный отдых',
+    link: '/sport-i-aktivniy-otdix',
     sub: [
       {
         id: 26,
@@ -157,6 +162,7 @@ export const categories = [
   {
     id: 31,
     name: 'Здоровье и благополучие',
+    link: '/zdarovie-i-blagopaluchenie',
     sub: [
       {
         id: 32,
@@ -188,6 +194,7 @@ export const categories = [
   {
     id: 37,
     name: 'Игрушки и игры',
+    link: '/igrushki-i-igri',
     sub: [
       {
         id: 38,
@@ -219,6 +226,7 @@ export const categories = [
   {
     id: 43,
     name: 'Книги и канцтовары',
+    link: '/knigi-i-kanstovari',
     sub: [
       {
         id: 44,
@@ -250,6 +258,7 @@ export const categories = [
   {
     id: 49,
     name: 'Автотовары',
+    link: '/avto-tovari',
     sub: [
       {
         id: 50,
@@ -281,6 +290,7 @@ export const categories = [
   {
     id: 55,
     name: 'Бытовая техника',
+    link: '/bitovaya-texnika',
     sub: [
       {
         id: 56,
@@ -312,6 +322,7 @@ export const categories = [
   {
     id: 61,
     name: 'Товары для домашних животных',
+    link: '/tovari-dlya-jivotnix',
     sub: [
       {
         id: 62,
@@ -343,6 +354,7 @@ export const categories = [
   {
     id: 67,
     name: 'Офисные принадлежности',
+    link: '/ofisnie-prinadlejnosti',
     sub: [
       {
         id: 68,
@@ -374,6 +386,7 @@ export const categories = [
   {
     id: 73,
     name: 'Искусство и ремесла',
+    link: '/iskustvo-i-remesla',
     sub: [
       {
         id: 74,
@@ -405,6 +418,7 @@ export const categories = [
   {
     id: 79,
     name: 'Ювелирные украшения и часы',
+    link: '/yvelirnie-ukrasheniya-i-chasi',
     sub: [
       {
         id: 80,

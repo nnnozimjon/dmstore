@@ -8,7 +8,7 @@ import { Categories } from "@/components/categories";
 import { GridCard } from "@/components/grid-card";
 import { useDisclosure } from "@mantine/hooks";
 
-export default function CategoryPage() {
+export default function AvtoTovariCategoryPage() {
   const [view, setView] = useState<'grid' | 'list'>('grid')
   const [opened, { open, close }] = useDisclosure(false);
 
@@ -16,13 +16,13 @@ export default function CategoryPage() {
     <Fragment>
       <Flex direction="column" className="lg:px-[250px] md:px-[40px] sm:px-0 overflow-x-hidden">
         <Grid className="mb-4">
-          <Grid.Col span={{ lg: 3, sm: 12 }}>
+          <Grid.Col span={{ lg: 3, sm: 12 }} className="">
             <Categories />
             <LeftSideFilter className="hidden md:block lg:block" />
           </Grid.Col>
           <Grid.Col span={{ lg: 9, sm: 12 }} className="mt-0 md:mt-4">
             <Flex className="border border-gray-300 md:rounded-md rounded-none p-2" align={'center'} justify={'space-between'}>
-              <Text className="hidden md:block">{'12,911 items in'} <strong>Mobile accessory</strong></Text>
+              <Text className="hidden md:block">{'Найдено 192 товара в категории'} <strong>Автотовары</strong></Text>
               <Button onClick={open} className="block md:hidden" leftSection={<IconFilter size={20} />} variant="default">
                 Filter
               </Button>

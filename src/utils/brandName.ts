@@ -1,1 +1,1 @@
-export const brandName = 'Dushanbe Market'
+export const brandName = 'Fayz & Co'

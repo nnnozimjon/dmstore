@@ -1,6 +1,7 @@
 import { Button, Flex, Menu } from "@mantine/core"
 import { categories } from "./categories.mock"
 import { IconArrowRight, IconMenuDeep } from "@tabler/icons-react"
+import Link from "next/link"
 
 export const Categories = () => {
   return <Flex gap={'md'} className="px-2 lg:px-0 my-4 sm:flex-wrap flex-nowrap overflow-x-scroll overflow-y-hidden scrollbar-hide">
@@ -31,7 +32,11 @@ export const Categories = () => {
                 position="right-start"
               >
                 <Menu.Target>
-                  <Menu.Item className="w-full flex font-semibold text-black" rightSection={<IconArrowRight size={20} />}>{category.name}</Menu.Item>
+                  <Menu.Item className="w-full flex font-semibold text-black" rightSection={<IconArrowRight size={20} />}>
+                    <Link href={'/category' + category?.link}>
+                      {category.name}
+                    </Link>
+                  </Menu.Item>
                 </Menu.Target>
 
 
