@@ -1,1 +1,1 @@
-export const brandName = 'Fayz & Co'
+export const brandName = 'DM'

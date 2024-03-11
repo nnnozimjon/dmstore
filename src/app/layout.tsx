@@ -1,4 +1,5 @@
 // relative styles
+
 import '@mantine/carousel/styles.css';
 import '@mantine/core/styles.css';
 import './globals.css'
@@ -8,6 +9,8 @@ import { Inter } from 'next/font/google'
 import { MantineProvider } from '@mantine/core'
 import { AppFooter } from '@/components/app-footer';
 import { AppHeader } from '@/components/app-header';
+import { Provider } from 'react-redux';
+import { store } from '@/store';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,10 +27,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+
         <MantineProvider>
-          <AppHeader />
-          {children}
-          <AppFooter />
+          <Provider store={store}>
+            <AppHeader />
+            {children}
+            <AppFooter />
+          </Provider>
         </MantineProvider>
       </body>
     </html>

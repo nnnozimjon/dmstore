@@ -1,5 +1,4 @@
 "use client";
-
 import { BatchItems } from "@/components/batch-items";
 import { CarouselItems } from "@/components/carousel";
 import { Categories } from "@/components/categories";

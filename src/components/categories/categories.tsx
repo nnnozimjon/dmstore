@@ -16,7 +16,7 @@ export const Categories = () => {
     >
 
       <Menu.Target>
-        <Button leftSection={<IconMenuDeep size={20} />} className="w-fit border border-gray-300 text-black rounded-none hidden md:grid lg:grid">Categories</Button>
+        <Button leftSection={<IconMenuDeep size={20} />} className="w-fit border border-gray-300 text-black rounded-none hidden md:grid lg:grid">Категории</Button>
       </Menu.Target>
 
       <Menu.Dropdown>

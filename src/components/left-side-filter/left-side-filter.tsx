@@ -71,7 +71,7 @@ export const LeftSideFilter = ({
 }: LeftSideFilterProps) => {
   const filterTypes = [
     {
-      label: "Category",
+      label: "Категория",
       content: filterByCategory.data.length ? (
         <Category
           categories={filterByCategory?.data}
@@ -80,7 +80,7 @@ export const LeftSideFilter = ({
       ) : null,
     },
     {
-      label: "Brands",
+      label: "Бренды",
       content: filterByBrands.data.length ? (
         <Brands
           brands={filterByBrands?.data}
@@ -89,23 +89,23 @@ export const LeftSideFilter = ({
       ) : null,
     },
     {
-      label: "Features",
+      label: "Характеристики",
       content: filterByFeatures.data.length ? <Features /> : null,
     },
     {
-      label: "Price Range",
+      label: "Цена",
       content: filterByPrice.active ? (
         <PriceRanges onClick={(price) => filterByPrice.onClick(price)} />
       ) : null,
     },
     {
-      label: "Condition",
+      label: "Состояние",
       content: filterByCondition.active ? (
         <Condition onChange={filterByCondition.onChange} />
       ) : null,
     },
     {
-      label: "Ratings",
+      label: "Рейтинги",
       content: filterByRatings.data.length ? (
         <Ratings
           onChange={filterByRatings.onChange}
@@ -119,12 +119,12 @@ export const LeftSideFilter = ({
     <Accordion
       defaultChecked={true}
       defaultValue={[
-        "Category",
-        "Brands",
-        "Features",
-        "Price Range",
-        "Condition",
-        "Ratings",
+        "Категория",
+        "Бренды",
+        "Характеристики",
+        "Цена",
+        "Состояние",
+        "Рейтинги",
       ]}
       multiple
       className={className}
